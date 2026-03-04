@@ -1,12 +1,6 @@
 ## LUMEN Chatbot Evaluation and Observability Framework 
 ### *with llms-as-judges ‍⚖️
 
-1. [Overview](#overview)
-2. [Installation](#installation)
-3. [Usage Examples](#usage-examples)
-   - [Single Judge](#single-judge)
-   - [Multi Judges](#multi-judges)
-
 ## Overview
 
 A framework to evaluate LUMEN chatbot performance using LLMs as judges. Built on top of `judges`, a lightweight library for creating LLM-based evaluators.
@@ -23,17 +17,27 @@ cd lumen-chat-eval
 ```
 
 ## Usage Examples
+Before running any examples, set your API key and base URL for the LLM. If you are using custom LLMs, they must be compatible with the OpenAI wrapper:
+```
+import os
+
+# Replace with your actual API key
+os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
+
+# Replace with your LLM endpoint
+os.environ["OPENAI_BASE_URL"] = "https://baseurl.llm/v1"
+```
 
 ### Single Judge:
 Run a single LLM judge evaluation:
 ```
-python lumen-example-single.py
+python lumen-examples/single.py
 ```
 
 ### Multi Judges:
 Run multiple LLM judges simultaneously for consensus evaluation:
 ```
-python lumen-example-multi.py
+python lumen-examples/multi.py
 ```
 
 
