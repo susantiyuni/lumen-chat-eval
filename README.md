@@ -20,12 +20,13 @@ cd lumen-chat-eval
 Before running any examples, set your API key and base URL for the LLM. If you are using custom LLMs, they must be compatible with the OpenAI wrapper:
 ```
 import os
-
-# Replace with your actual API key
 os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
-
-# Replace with your LLM endpoint
 os.environ["OPENAI_BASE_URL"] = "https://baseurl.llm/v1"
+```
+or set these environment variables in terminal session:
+```
+export OPENAI_API_KEY="YOUR_API_KEY"
+export OPENAI_BASE_URL="https://baseurl.llm/v1"
 ```
 
 ### Single Judge:
