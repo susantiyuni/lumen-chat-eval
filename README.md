@@ -1,4 +1,4 @@
-## LUMEN Evaluation and Observability Framework 
+## LUMEN Chatbot Evaluation and Observability Framework 
 ### *with llms-as-judges ‍⚖️
 
 1. [Overview](#overview)
@@ -7,30 +7,37 @@
    - [Single Judge](#single-judge)
    - [Multi Judges](#multi-judges)
 
-## Overview 
-`judges` is a small library to use and create LLM-as-a-Judge evaluators. The purpose of `judges` is to have a curated set of LLM evaluators in a low-friction format across a variety of use cases that are backed by research, and can be used off-the-shelf or serve as inspiration for building your own LLM evaluators.
+## Overview
+
+A framework to evaluate LUMEN chatbot performance using LLMs as judges. Built on top of `judges`, a lightweight library for creating LLM-based evaluators.
+Features:
+- Evaluate chatbot responses using LLMs as judges.
+- Customize evaluation logic and metrics.
+- Run single or multiple judges to improve scoring robustness.
 
 ## Installation
+Clone the repository:
 ```
-pip install judges
+git clone https://github.com/susantiyuni/lumen-chat-eval.git
+cd lumen-chat-eval
 ```
 
 ## Usage Examples
 
 ### Single Judge:
-
+Run a single LLM judge evaluation:
 ```
 python lumen-example-single.py
 ```
 
 ### Multi Judges:
-
+Run multiple LLM judges simultaneously for consensus evaluation:
 ```
 python lumen-example-multi.py
 ```
 
 
-
+-----
 
 
 # judges ‍⚖️
