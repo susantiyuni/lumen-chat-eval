@@ -16,7 +16,7 @@ judges = [
 ]
 
 # GoTriple chat logs
-with open("logs/exports1770993570423-lf-traces-export-cmfnrnig0000ht607n1wls6sl.jsonl", "r") as f:
+with open("exports1770993570423-lf-traces-export-cmfnrnig0000ht607n1wls6sl.jsonl", "r") as f:
     logs = [json.loads(line) for line in f]
 
 for i, log in enumerate(logs[:2]):
